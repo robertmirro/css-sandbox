@@ -1,0 +1,52 @@
+#tabs {
+    border: 1px solid #CCC;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #EEE;
+    box-shadow: inset 0 -2px 2px #DADADA;
+    list-style: none;
+    height: 27px;
+    padding-top: 30px;
+}
+
+#tabs li {
+    list-style: none;
+    float: left;
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: inset 0 -2px 2px #DADADA;
+    margin-right: 4px;
+}
+
+#tabs li a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #FFF;
+    background-color: #FFF;
+    background: -webkit-gradient(linear, 0 0, 0 10%, from(#EBEBEB), to(white));
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif; 
+	font-size: 13px;
+	font-weight: bold;         
+    padding: 6px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top: 1px solid #FFF;
+}
+
+#tabs li a.inactive {
+    color: #666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	background: -webkit-gradient(linear, 0 0, 0 75%, from(#DEDEDE), to(white));  
+	border-top: 1px solid white;     
+}
+
+#tabs li a:hover , #tabs li a.inactive:hover {
+    color: #000;
+	border-top: 1px solid #DEDEDE;     
+}
