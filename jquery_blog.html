@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/jquery_blog.css">
+</head>
+<body>
+
+<section>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" autofocus></input>
+</section>
+<section>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" placeholder="Enter your comment"></textarea>
+</section>
+<input type="button" id="post" value="Post to Blog"></input>
+<hr>
+<section id="blogposts">
+</section>
+
+<script src="scripts/jquery-2.1.1.min.js"></script>
+<script>
+
+;(function() {
+    $(document).ready( function() {
+        $('#post').on('click',function(e) {
+            postToBlog();
+        });
+    });
+
+    function postToBlog() {
+        // console.log( 'name:' , $('#name').val() );
+        var $blogPost = $('<div class="blogpost"></div>') ,
+            $blogPostDateTime = $('<div class="blogdatetime"></div>').html( new Date() ) ,
+            $blogPostAuthor = $('<div class="blogauthor"></div>').html( $('#name').val() ) ,
+            $blogPostContent = $('<div class="blogcontent"></div>').html( $('#comment').val() );
+
+        $blogPost.append( $blogPostDateTime , $blogPostAuthor , $blogPostContent );            
+        $('section#blogposts').prepend( $blogPost );
+        $('.blogpost').css('background-color','').filter(':even').css('background-color','#CCC');
+        $('#name , #comment').val('').filter('#name').focus();
+        // $('#name').focus();
+
+    }
+})();
+
+</script>
+</body>
+</html>

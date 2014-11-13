@@ -1,0 +1,29 @@
+section {
+    margin-bottom: 4px;
+}
+
+input, textarea {
+    vertical-align: middle; 
+}    
+
+.blogpost {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.blogdatetime {
+    padding: 2px;
+    background-color: #EEE;
+    border-radius: 4px;
+}
+
+.blogauthor {
+    padding: 2px;
+    margin-bottom: 4px;
+    font-style: italic;
+    font-size: 80%;
+}
+.blogauthor::before {
+    content: 'Posted by: ';
+}
