@@ -30,8 +30,8 @@
     background: -webkit-gradient(linear, 0 0, 0 10%, from(#EBEBEB), to(white));
     color: #000;
     font-family: Arial, Helvetica, sans-serif; 
-	font-size: 13px;
-	font-weight: bold;         
+    font-size: 13px;
+    font-weight: bold;         
     padding: 6px 10px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -42,11 +42,11 @@
     color: #666;
     padding-top: 5px;
     padding-bottom: 5px;
-	background: -webkit-gradient(linear, 0 0, 0 75%, from(#DEDEDE), to(white));  
-	border-top: 1px solid white;     
+    background: -webkit-gradient(linear, 0 0, 0 75%, from(#DEDEDE), to(white));  
+    border-top: 1px solid white;     
 }
 
 #tabs li a:hover , #tabs li a.inactive:hover {
     color: #000;
-	border-top: 1px solid #DEDEDE;     
+    border-top: 1px solid #DEDEDE;     
 }
