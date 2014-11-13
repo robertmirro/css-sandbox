@@ -32,7 +32,7 @@
 
     function postToBlog() {
         // console.log( 'name:' , $('#name').val() );
-        var $blogPost = $('<div class="blogpost"></div>') ,
+        var $blogPost = $('<div class="blogpost"></div>').hide() ,
             $blogPostDateTime = $('<div class="blogdatetime"></div>').html( new Date() ) ,
             $blogPostAuthor = $('<div class="blogauthor"></div>').html( $('#name').val() ) ,
             $blogPostContent = $('<div class="blogcontent"></div>').html( $('#comment').val() );
@@ -40,6 +40,7 @@
         $blogPost.append( $blogPostDateTime , $blogPostAuthor , $blogPostContent );            
         $('section#blogposts').prepend( $blogPost );
         $('.blogpost').css('background-color','').filter(':even').css('background-color','#CCC');
+        $blogPost.slideDown('slow');
         $('#name , #comment').val('').filter('#name').focus();
         // $('#name').focus();
 
