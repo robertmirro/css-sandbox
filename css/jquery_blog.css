@@ -9,7 +9,8 @@ input, textarea {
 .blogpost {
     margin-bottom: 8px;
     border-radius: 4px;
-    padding: 10px;
+    border: 1px solid #CCC;
+    padding: 4px;
 }
 
 .blogdatetime {
