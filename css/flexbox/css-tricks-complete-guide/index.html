@@ -64,6 +64,13 @@
             order: 0;
             /* order: 1; */
             /* order: 3; */
+
+            /* default 0 = use only necessary space, 1 = distribute all remain space, 4 = use 4x as much space as other items if possible  */
+            /* flex-grow: 0; */
+            /* flex-grow: 1; */
+
+            /* default: 1 */
+            /* flex-shrink: 1; */
         }
 
         #contents {
@@ -73,6 +80,11 @@
             order: 0;
             /* order: 2; */
             /* order: 1; */
+
+            /* flex-grow: 0; */
+            /* flex-grow: 1; */
+
+            /* flex-shrink: 1; */
         }
 
         #right-gutter {
@@ -82,6 +94,12 @@
             order: 0;
             /* order: 3; */
             /* order: 2; */
+
+            /* flex-grow: 0; */
+            /* flex-grow: 1; */
+            flex-grow: 4;
+
+            /* flex-shrink: 1; */
         }
 
         .parent {
